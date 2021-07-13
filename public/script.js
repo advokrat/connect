@@ -25,7 +25,7 @@ navigator.mediaDevices.getUserMedia({
 
   socket.on('user-connected', userId => {
     console.log('New User Connected: ' + userId)
-    $("ul").append(`<li align=center font-size=0.5rem class="message"><b>User ID ${userId} Connected!</b></li>`);
+    $("ul").append(`<li align=center class="message"><b>User ID ${userId} Connected!</b></li>`);
     scrollToBottom()
     const fc = () => connectToNewUser(userId, stream)
     timerid = setTimeout(fc, 1000)
@@ -47,7 +47,7 @@ navigator.mediaDevices.getUserMedia({
 
 socket.on('user-disconnected', userId => {
   if (peers[userId]) peers[userId].close()
-  $("ul").append(`<li align=center font-size=0.5rem class="message"><b>User ID ${userId} Disonnected!</b></li>`);
+  $("ul").append(`<li align=center class="message"><b>User ID ${userId} Disonnected!</b></li>`);
   scrollToBottom()
 })
 
