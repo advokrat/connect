@@ -136,7 +136,7 @@ const setPlayVideo = () => {
 }
 
 const new_meeting = () =>{
-    location.href = "https://mysterious-bastion-36078.herokuapp.com";
+    location.href = "https://connect-interact.herokuapp.com";
 }
 
 var $temp = $("<input>");
