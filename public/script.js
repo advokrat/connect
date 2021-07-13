@@ -47,6 +47,8 @@ navigator.mediaDevices.getUserMedia({
 
 socket.on('user-disconnected', userId => {
   if (peers[userId]) peers[userId].close()
+  $("ul").append(`<li align=center class="message"><b>User ID ${userId} Disonnected!</b></li>`);
+  scrollToBottom()
 })
 
 myPeer.on('open', id => {
