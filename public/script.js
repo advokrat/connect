@@ -147,4 +147,10 @@ $('.clipboard').on('click', function() {
   $temp.val($url).select();
   document.execCommand("copy");
   $temp.remove();
+
+  const html = `
+    <i class="fas fa-clipboard-list"></i>
+    <span>Meeting Code Copied!</span>
+  `
+  document.querySelector('.clipboard').innerHTML = html;
 })
