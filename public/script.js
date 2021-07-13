@@ -83,6 +83,11 @@ const scrollToBottom = () => {
   d.scrollTop(d.prop("scrollHeight"));
 }
 
+const scrollToBottomVideos = () => {
+  var d = $('.main__videos');
+  d.scrollTop(d.prop("scrollHeight"));
+}
+
 
 const muteUnmute = () => {
   const enabled = myVideoStream.getAudioTracks()[0].enabled;
