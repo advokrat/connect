@@ -134,3 +134,7 @@ const setPlayVideo = () => {
   `
   document.querySelector('.main__video_button').innerHTML = html;
 }
+
+const new_meeting = () =>{
+    location.href = "https://mysterious-bastion-36078.herokuapp.com";
+}
